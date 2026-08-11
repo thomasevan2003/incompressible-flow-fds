@@ -1,1 +1,5 @@
 # incompressible-flow-fds
+
+This program generates a visualization of incompressible flow through a series of channels. The flow solution is computed using an explicit scheme on a staggered finite difference grid with pressure resolved using Chorin's projection method. Pressure is computed using iterative relaxation of the Poisson equation. The flow velocity is visualized using tracer particles superimposed on a velocity field plot as well as dye tracking from the inlet. The flow of dye across the domain is computed at each step with an upwind advection scheme using the current velocity solution.
+
+To use this program, compile and run main.cpp. The resulting images will be placed in the output folder. The program will take several hours to run. The video files can then be generated using tools such as ffmpeg.
